@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Mobile App</title>
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- jQuery Mobile JS -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<!-- ================= HOME PAGE ================= -->
+<div data-role="page" id="home">
+
+    <div data-role="header" data-theme="b">
+        <h1>College App</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h3>Welcome to College Management</h3>
+
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#students">Students</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-theme="b">
+        <h4>© 2026 College</h4>
+    </div>
+
+</div>
+
+<!-- ================= STUDENTS PAGE ================= -->
+<div data-role="page" id="students">
+
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Students</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <ul data-role="listview" data-filter="true" data-inset="true">
+            <li>Vaibhav - IT</li>
+            <li>Rahul - CS</li>
+            <li>Sneha - ENTC</li>
+            <li>Pooja - Mechanical</li>
+        </ul>
+
+    </div>
+
+    <div data-role="footer" data-theme="b">
+        <h4>Student List</h4>
+    </div>
+
+</div>
+
+<!-- ================= COURSES PAGE ================= -->
+<div data-role="page" id="courses">
+
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Courses</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <ul data-role="listview" data-inset="true">
+            <li>Information Technology</li>
+            <li>Computer Engineering</li>
+            <li>Electronics & Telecommunication</li>
+            <li>Mechanical Engineering</li>
+        </ul>
+
+    </div>
+
+    <div data-role="footer" data-theme="b">
+        <h4>Courses Offered</h4>
+    </div>
+
+</div>
+
+<!-- ================= REGISTRATION FORM ================= -->
+<div data-role="page" id="register">
+
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="back">Back</a>
+        <h1>Register</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <form>
+
+            <label>Name:</label>
+            <input type="text" placeholder="Enter name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter email">
+
+            <label>Course:</label>
+            <select>
+                <option>IT</option>
+                <option>CS</option>
+                <option>ENTC</option>
+            </select>
+
+            <label>Gender:</label>
+            <fieldset data-role="controlgroup">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </fieldset>
+
+            <button type="submit" data-theme="b">Submit</button>
+
+        </form>
+
+    </div>
+
+    <div data-role="footer" data-theme="b">
+        <h4>Registration Form</h4>
+    </div>
+
+</div>
+
+</body>
+</html>

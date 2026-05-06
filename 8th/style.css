@@ -1,0 +1,98 @@
+/* Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef1f7;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #1e1e2f, #2c2c54);
+    position: fixed;
+}
+
+.sidebar h4 {
+    letter-spacing: 1px;
+}
+
+.sidebar .nav-link {
+    color: #cfd8dc;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background: #4e73df;
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+}
+
+/* Navbar */
+.navbar {
+    border-radius: 12px;
+}
+
+/* Cards */
+.stat-card {
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Card colors (gradient style) */
+.bg-primary {
+    background: linear-gradient(135deg, #4e73df, #224abe) !important;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, #1cc88a, #17a673) !important;
+}
+
+.bg-warning {
+    background: linear-gradient(135deg, #f6c23e, #dda20a) !important;
+}
+
+.bg-danger {
+    background: linear-gradient(135deg, #e74a3b, #c0392b) !important;
+}
+
+/* Table */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+}
+
+.table thead {
+    background: #343a40;
+    color: white;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
